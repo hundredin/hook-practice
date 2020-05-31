@@ -7,3 +7,5 @@
 - Counter 동작방식의 차이
 - Functional Component 는 상태가 바뀌어 업데이트 될때마다 함수를 전체를 다시 실행한다.
 - Class based component 는 상태가 바뀌면 render 함수만 다시 실행한다.
+
+## 2. PostList 추가

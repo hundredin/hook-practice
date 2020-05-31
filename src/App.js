@@ -1,16 +1,16 @@
 import React from "react";
 import "./App.css";
-import Counter from "./Counter";
-import ClassCounter from "./ClassCounter";
+import PostList from "./PostList";
+import ClassPostList from "./ClassPostList";
 
 function App() {
   return (
     <div className="App">
       <div className="rect">
-        <Counter />
+        <PostList />
       </div>
       <div className="rect">
-        <ClassCounter />
+        <ClassPostList />
       </div>
     </div>
   );
