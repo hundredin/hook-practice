@@ -24,3 +24,9 @@
 
 - effetc 에서만 쓰는 함수는 effect 안에!
 - eslint-plugin-react-hooks 가 체크해 준다.
+
+## 5. 함수를 deps 로 사용할 수 있을까
+
+- 있다.
+- 함수가 컴포넌트 스코프 안의 어떠한 것도 사용하지 않는다면, 컴포넌트 외부로 끌어올려두거나
+- useCallback 을 이용한다.
