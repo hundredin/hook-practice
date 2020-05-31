@@ -1,4 +1,5 @@
 import React from "react";
+import ClassPostDetail from "./ClassPostDetail";
 
 class ClassPostList extends React.Component {
   state = {
@@ -15,7 +16,6 @@ class ClassPostList extends React.Component {
   }
 
   handleClick = (postId) => () => {
-    console.log(postId);
     this.setState({ postId });
   };
 
@@ -31,6 +31,7 @@ class ClassPostList extends React.Component {
             </li>
           ))}
         </ul>
+        <ClassPostDetail postId={this.state.postId} />
       </div>
     );
   }

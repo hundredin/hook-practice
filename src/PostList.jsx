@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import PostDetail from "./PostDetail";
 
 const PostList = () => {
   const [postId, setPostId] = useState(-1);
@@ -13,7 +14,6 @@ const PostList = () => {
   }, []);
 
   const handleClick = (postId) => () => {
-    console.log(postId);
     setPostId(postId);
   };
 
@@ -28,6 +28,7 @@ const PostList = () => {
           </li>
         ))}
       </ul>
+      <PostDetail postId={postId} />
     </div>
   );
 };
