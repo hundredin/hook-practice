@@ -30,3 +30,8 @@
 - 있다.
 - 함수가 컴포넌트 스코프 안의 어떠한 것도 사용하지 않는다면, 컴포넌트 외부로 끌어올려두거나
 - useCallback 을 이용한다.
+
+## 6. deps 제거하기
+
+- AutoCounter
+- setCount(count => count + 1) 로 deps 를 제거 할 수 있다.
