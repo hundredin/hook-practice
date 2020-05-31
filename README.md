@@ -35,3 +35,4 @@
 
 - AutoCounter
 - setCount(count => count + 1) 로 deps 를 제거 할 수 있다.
+- step 추가로 인해 interval 초기화되지 않길 원한다면?
