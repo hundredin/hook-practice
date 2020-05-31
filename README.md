@@ -19,3 +19,8 @@
 - Functional Component
   - 데이터 동기화 관점에서 생각하면 단순
   - 코드 짧고 단순
+
+## 4. PostDetail 다듬기
+
+- effetc 에서만 쓰는 함수는 effect 안에!
+- eslint-plugin-react-hooks 가 체크해 준다.

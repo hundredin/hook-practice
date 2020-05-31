@@ -4,11 +4,15 @@ const PostDetail = ({ postId }) => {
   const [post, setPost] = useState({});
 
   useEffect(() => {
-    fetch(`https://jsonplaceholder.typicode.com/posts/${postId}`)
-      .then((response) => response.json())
-      .then((json) => {
-        setPost(json);
-      });
+    const fetchData = () => {
+      fetch(`https://jsonplaceholder.typicode.com/posts/${postId}`)
+        .then((response) => response.json())
+        .then((json) => {
+          setPost(json);
+        });
+    };
+
+    fetchData();
   }, [postId]);
 
   return (

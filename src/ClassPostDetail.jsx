@@ -5,21 +5,21 @@ class ClassPostDetail extends React.Component {
     post: {},
   };
 
-  componentDidMount() {
+  fetchData = () => {
     fetch(`https://jsonplaceholder.typicode.com/posts/${this.props.postId}`)
       .then((response) => response.json())
       .then((json) => {
         this.setState({ post: json });
       });
+  };
+
+  componentDidMount() {
+    this.fetchData();
   }
 
   componentDidUpdate(prevProps) {
     if (prevProps.postId !== this.props.postId) {
-      fetch(`https://jsonplaceholder.typicode.com/posts/${this.props.postId}`)
-        .then((response) => response.json())
-        .then((json) => {
-          this.setState({ post: json });
-        });
+      this.fetchData();
     }
   }
 
